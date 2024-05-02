@@ -1,13 +1,15 @@
 import React from 'react';
+
 function ProductItem(props) {
-    let {id,name,price,category} =props.product
+    let { id, name, price, category } = props.product;
     return (
-        <tr className="">
-            <td className="">{id}</td>
+        <tr>
+            <td>{id}</td>
             <td>{name}</td>
-            <td>{price}$</td>
+            <td>${price}</td>
             <td>{category.name}</td>
         </tr>
     );
 }
+
 export default ProductItem;
